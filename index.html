@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Presentation on CSS custom properties">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>CSS Presentation</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>CSS custom properties</h1>
+        <section>
+            <div></div>
+            <!-- <h2>Introduction</h2> -->
+            <p>CSS custom properties are like CSS variables. They help reduce repetition of code and make it easier to
+                update the code. Instead of needing to change the code in several places, the code only needs to be
+                changed
+                in one place and the styles update automatically.</p>
+            <p>Learn more in depth about CSS custom properties at <a href="https://css-tricks.com/a-complete-guide-to-custom-properties/" target="_blank">CSS Tricks</a>.</p>
+        </section>
+        <section>
+            <div></div>
+            <h2>Naming convention and use</h2>
+            <p>Custom properties have a specific naming convention and use. Each custom property must start with two
+                dashes
+                (--) and be within a selector.</p>
+            <p class="codepen" data-height="575" data-default-tab="css" data-slug-hash="xxrQeXO" data-user="zkelley23"
+                style="height: 575px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/zkelley23/pen/xxrQeXO">
+                        CSS Custom Properties - Naming and use</a> by Zach Kelley (<a
+                        href="https://codepen.io/zkelley23">@zkelley23</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <p>Properties are accessed by putting the property inside <code>var()</code>. Below, <code>--blue</code>
+                and <code>--black</code> are the custom properties with <code>#67CBF0</code> and <code>#222</code> as
+                their respective values. <code>var(--blue)</code> and <code>var(--black)</code> are the variables.</p>
+            <p class="codepen" data-height="250" data-default-tab="css,result" data-slug-hash="RwgqOeM"
+                data-user="zkelley23"
+                style="height: 250px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/zkelley23/pen/RwgqOeM">
+                    </a> by Zach Kelley (<a href="https://codepen.io/zkelley23">@zkelley23</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section>
+            <div></div>
+            <h2>Color</h2>
+            <p>Using custom properties to set color themes is very useful. By setting the colors in the <code>html{}</code> css, the colors can be accessed throughout the stylesheet. If the colors ever need to be changed, the only need to be updated once.</p>
+            <p class="codepen" data-height="450" data-default-tab="css,result" data-slug-hash="YzQJbMK"
+                data-user="zkelley23"
+                style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/zkelley23/pen/YzQJbMK">
+                    </a> by Zach Kelley (<a href="https://codepen.io/zkelley23">@zkelley23</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section>
+            <h2>Spacing</h2>
+            <p>Using custom properties to set spacing (padding and margin) is also very useful. Again, by setting the spacing in the <code>html{}</code> css, the spacing can be accessed throughout the stylesheet. If the spacing needs to be adjusted at all, it only needs to be changed in one place.</p>
+            <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="ZEymNYO"
+                data-user="zkelley23"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/zkelley23/pen/ZEymNYO">
+                        CSS Custom Properties - Color</a> by Zach Kelley (<a
+                        href="https://codepen.io/zkelley23">@zkelley23</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section>
+            <h2>Experiment</h2>
+            <p class="codepen" data-height="550" data-default-tab="css,result" data-slug-hash="powQmeb"
+                data-user="zkelley23"
+                style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/zkelley23/pen/powQmeb">
+                        CSS Custom Properties - Color</a> by Zach Kelley (<a
+                        href="https://codepen.io/zkelley23">@zkelley23</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>Zach Kelley</p>
+    </footer>
+</body>
+
+</html>
